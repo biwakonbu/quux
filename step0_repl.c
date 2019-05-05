@@ -14,12 +14,12 @@ char *READ(char prompt[]) {
   return line;
 }
 
-char *EVAL(char *line) {
-  return line;
+char *EVAL(char *ast) {
+  return ast;
 }
 
-char *PRINT(char *line) {
-  return line;
+void PRINT(char *expr) {
+  puts(expr);
 }
 
 int main() {
@@ -36,7 +36,7 @@ int main() {
     }
 
     expr = EVAL(ast);
-    puts(PRINT(expr));
+    PRINT(expr);
 
     free(ast);
   }
