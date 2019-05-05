@@ -1,4 +1,6 @@
 CC := gcc
+CFLAGS := -g -Wall -Wextra
+LDLIBS := -lreadline
 
 step0_repl:
 

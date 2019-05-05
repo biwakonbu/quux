@@ -3,6 +3,9 @@
 #include <readline/history.h>
 
 
-int main(int argc, char **argv) {
+int main() {
+  while (1) {
+    readline("user> ");
+  }
   return 0;
 }
