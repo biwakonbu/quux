@@ -4,8 +4,13 @@
 
 
 int main() {
+  char *line;
   while (1) {
-    readline("user> ");
+    line = readline("user> ");
+    if (!line) {
+      putchar('\n');
+      break;
+    }
   }
   return 0;
 }
